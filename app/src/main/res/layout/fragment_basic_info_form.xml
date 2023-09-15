@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECE9FE"
+    tools:context=".BasicInfoForm">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ECE9FE"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:text="Name*" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Enter Name"
+                    android:textColorHint="#525252"
+                    android:background="@drawable/textbox_styling"
+                    android:padding="10dp"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textPersonName"
+                    android:layout_below="@id/tvName"/>
+
+                <TextView
+                    android:id="@+id/tvGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:text="Gender*"
+                    android:layout_below="@id/etName"/>
+
+                <RadioGroup
+                    android:id="@+id/genderGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_toRightOf="@id/tvGender"
+                    android:orientation="horizontal"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_below="@id/tvGender">
+
+                    <RadioButton
+                        android:id="@+id/radBtnMale"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:buttonTint="#FF1493"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/radBtnFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:buttonTint="#FF1493"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"/>
+
+                    <RadioButton
+                        android:id="@+id/radBtnOther"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:buttonTint="#FF1493"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/black"/>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tvDob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date Of Birth*"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/genderGroup"/>
+
+             <!--   <EditText
+                    android:id="@+id/etDob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:hint="DD/MM/YY"
+                    android:textColorHint="#FF69B4"
+                    android:background="@drawable/textbox_styling"
+                    android:padding="10dp"
+                    android:textColor="#FF1493"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    android:drawableEnd="@drawable/ic_calendar_month"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvDob"/>
+                    -->
+
+                <EditText
+                    android:id="@+id/etDob"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="date"
+                    android:padding="10dp"
+                    android:focusableInTouchMode="false"
+                    android:clickable="false"
+                    android:hint="DD/MM/YY"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray"
+                    android:background="@drawable/textbox_styling"
+                    android:drawableEnd="@drawable/ic_calendar_month"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvDob"/>
+
+                <TextView
+                    android:id="@+id/tvPrimaryPhoneNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number Primary*"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/etDob"/>
+
+                <EditText
+                    android:id="@+id/etPrimaryPhoneNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:hint="Enter phone number"
+                    android:textColorHint="@color/gray"
+                    android:background="@drawable/textbox_styling"
+                    android:padding="10dp"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvPrimaryPhoneNum"/>
+
+                <TextView
+                    android:id="@+id/tvSecondaryPhoneNUm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number Secondary"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/etPrimaryPhoneNum"/>
+
+                <EditText
+                    android:id="@+id/etSecondaryPhoneNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:hint="Enter phone number"
+                    android:textColorHint="@color/gray"
+                    android:background="@drawable/textbox_styling"
+                    android:padding="10dp"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvSecondaryPhoneNUm"/>
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email*"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/etSecondaryPhoneNum"/>
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:hint="Enter your email"
+                    android:textColorHint="@color/gray"
+                    android:background="@drawable/textbox_styling"
+                    android:padding="10dp"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvEmail"/>
+
+                <Button
+                    android:id="@+id/btnForm1Next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_styling"
+                    android:layout_below="@id/etEmail"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginStart="280dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

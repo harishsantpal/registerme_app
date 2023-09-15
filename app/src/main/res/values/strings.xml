@@ -1,0 +1,263 @@
+<resources>
+    <string name="app_name">RegistrationSetup</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="spinner_disability">
+        <item>Select Your Disability</item>
+    </string-array>
+
+    <string name="termAndCondition"><u>Terms &amp; Conditions</u></string>
+
+    <!-- string array for list of countries to select in spinner -->
+    <string-array name="countryList">
+        <item>Afghanistan</item>
+        <item>Armenia</item>
+        <item>Azerbaijan</item>
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Bhutan</item>
+        <item>Cambodia</item>
+        <item>China</item>
+        <item>Georgia</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Israel</item>
+        <item>Japan</item>
+        <item>Jordan</item>
+        <item>Kazakhstan</item>
+        <item>Kuwait</item>
+        <item>Lebanon</item>
+        <item>Malaysia</item>
+        <item>Maldives</item>
+        <item>Mongolia</item>
+        <item>Myanmar</item>
+        <item>Nepal</item>
+        <item>Oman</item>
+        <item>Pakistan</item>
+        <item>Philippines</item>
+        <item>Qatar</item>
+        <item>Singapore</item>
+        <item>Sri Lanka</item>
+        <item>Turkey</item>
+        <item>Vietnam</item>
+    </string-array>
+
+    <!-- List of Names of States in India -->
+    <string-array name="states_list">
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chhattisgarh</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Odisha</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttarakhand</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+    </string-array>
+
+
+    <!-- List of districts in Maharashtra -->
+    <string-array name="district_list">
+        <item>Ahmednagar</item>
+        <item>Akola</item>
+        <item>Amravati</item>
+        <item>Aurangabad</item>
+        <item>Beed</item>
+        <item>Bhandara</item>
+        <item>Buldhana</item>
+        <item>Chandrapur</item>
+        <item>Dhule</item>
+        <item>Gadchiroli</item>
+        <item>Gondia</item>
+        <item>Hingoli</item>
+        <item>Jalgaon</item>
+        <item>Jalna</item>
+        <item>Kolhapur</item>
+        <item>Latur</item>
+        <item>Mumbai City</item>
+        <item>Mumbai Suburban</item>
+        <item>Nagpur</item>
+        <item>Nanded</item>
+        <item>Nandurbar</item>
+        <item>Nashik</item>
+        <item>Osmanabad</item>
+        <item>Palghar</item>
+        <item>Parbhani</item>
+        <item>Pune</item>
+        <item>Raigad</item>
+        <item>Ratnagiri</item>
+        <item>Sangli</item>
+        <item>Satara</item>
+        <item>Sindhudurg</item>
+        <item>Solapur</item>
+        <item>Thane</item>
+        <item>Wardha</item>
+        <item>Washim</item>
+        <item>Yavatmal</item>
+    </string-array>
+
+
+    <!-- List of Taluka's in Aurangabad district -->
+    <string-array name="talukas_list">
+        <item>Aurangabad</item>
+        <item>Gangapur</item>
+        <item>Kannad</item>
+        <item>Khultabad</item>
+        <item>Paithan</item>
+        <item>Phulambri</item>
+        <item>Sillod</item>
+        <item>Soegaon</item>
+        <item>Vaijapur</item>
+    </string-array>
+
+    <!-- Villages comes under the Aurangabad Tahasil.. -->
+    <string-array name="villages_city">
+        <item>Abdimandi</item>
+        <item>Anjandoh</item>
+        <item>Apatgaon</item>
+        <item>Bagtalab</item>
+        <item>Bakapur</item>
+        <item>Balapur</item>
+        <item>Bangaon</item>
+        <item>Borwadi</item>
+        <item>Chartha</item>
+        <item>Chaukawadi</item>
+        <item>Chincholi</item>
+        <item>Chitegaon</item>
+        <item>Daigavhan</item>
+        <item>Darakwadi</item>
+        <item>Daregaon</item>
+        <item>Daulatabad</item>
+        <item>Dharmapur</item>
+        <item>Dhawalapuri</item>
+        <item>Eklahara</item>
+        <item>Fattepur</item>
+        <item>Gadiwat</item>
+        <item>Gandheli</item>
+        <item>Garkheda</item>
+        <item>Georai</item>
+        <item>Ghardon Tanda</item>
+        <item>Golatgaon</item>
+        <item>Hasanabadwadi</item>
+        <item>Hatmali</item>
+        <item>Hirapur</item>
+        <item>Husenpur</item>
+        <item>Jadgaon</item>
+        <item>Jatwada</item>
+        <item>Jodwadi</item>
+        <item>Kachanpur</item>
+        <item>Kachhighati</item>
+        <item>Kesapuri</item>
+        <item>Lamkana</item>
+        <item>Lingdari</item>
+        <item>Maliwada</item>
+        <item>Malkapur</item>
+        <item>Naigaon</item>
+        <item>Nipani</item>
+        <item>Pachod</item>
+        <item>Palshi</item>
+        <item>Rampuri</item>
+        <item>Rustumpur</item>
+        <item>Sahajatpur</item>
+        <item>Sarola</item>
+        <item>Taklimali</item>
+        <item>Wahegaon</item>
+        <item>Warzadi</item>
+        <item>Zalta</item>
+    </string-array>
+
+    <!-- Dis-ability list for showing in the personal information....-->
+    <string-array name="physical_disability">
+        <item>Vision Impairment</item>
+        <item>Deaf or Hard of hearing</item>
+        <item>Mental health conditions</item>
+        <item>Intellectual disability</item>
+        <item>Acquired brain injury</item>
+        <item>Autism spectrum disorder</item>
+        <item>Physical disability.</item>
+    </string-array>
+
+    <!-- Types of education list for personal information form in education information -->
+    <string-array name="education_list">
+        <item>SSC</item>
+        <item>HSC</item>
+        <item>BBA</item>
+        <item>Engineering – BE, B.Tech</item>
+        <item>BCA</item>
+        <item>MCA</item>
+        <item>Medical – BDS and MBBS</item>
+        <item>Finance – B.Com/CA</item>
+        <item>Law – BA LLB/LLB</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Types of profession information list -->
+    <string-array name="profession_list">
+        <item>Aerospace engineer</item>
+        <item>App developer</item>
+        <item>Barrister</item>
+        <item>Cake designer</item>
+        <item>Chemist</item>
+        <item>Doctor</item>
+        <item>Dancer and choreographer</item>
+        <item>Software developer</item>
+        <item>Farmer</item>
+        <item>Fashion designer</item>
+        <item>Jewellery maker</item>
+        <item>Journalist: science</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Types of sub-profession details list -->
+    <string-array name="sub_profession_list">
+        <item>Barrister (training)</item>
+        <item>Civil engineering apprentice</item>
+        <item>Dance choreographer</item>
+        <item>Dental lab assistant</item>
+        <item>Apprentice wing designer</item>
+        <item>Farming union policy advisor</item>
+        <item>Chef and food vlogger</item>
+        <item>Hairdresser apprentice</item>
+        <item>Journalist: Correspondent</item>
+        <item>Journalist: Associate editor</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- types of occupation details list -->
+    <string-array name="occupation_list">
+        <item>Carpenter</item>
+        <item>Office clerk</item>
+        <item>Operations manager</item>
+        <item>Line supervisor</item>
+        <item>Truck Driver</item>
+        <item>Registered nurse</item>
+        <item>Software developer</item>
+        <item>Lawyer</item>
+        <item>Other</item>
+    </string-array>
+
+    <dimen name="dialog_height">300dp</dimen>
+
+</resources>

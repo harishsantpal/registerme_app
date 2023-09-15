@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".VerificationForm">
+
+
+    <TextView
+        android:id="@+id/tvVerificationHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Verification" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We Will Send A One Time Code\n On Your Mobile Number"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tvVerificationHeading"/>
+
+    <TextView
+        android:id="@+id/tvOtpMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="OTP Will Be Send To :"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_below="@id/tvMessage"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/tvMobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="9462554477"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/tvOtpMessage"/>
+
+    <Button
+        android:id="@+id/btnReqOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:textAllCaps="false"
+        android:background="@drawable/button_styling"
+        android:layout_below="@id/tvMobileNo"
+        android:text="Request OTP"
+        android:textSize="20dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I have read and accept.The"
+        android:layout_marginTop="30dp"
+        android:buttonTint="#FF1493"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/btnReqOtp"/>
+
+    <TextView
+        android:id="@+id/tvTermCond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/checkBox"
+        android:layout_below="@id/btnReqOtp"
+        android:layout_marginTop="35dp"
+        android:textSize="15dp"
+        android:textColor="#FF1493"
+        android:text="@string/termAndCondition" />
+
+    <Button
+        android:id="@+id/btnForm4Back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:textColor="@color/gray"
+        android:textSize="20dp"
+        android:background="@drawable/back_button_style"
+        android:layout_below="@id/checkBox"
+        android:layout_marginTop="150dp"/>
+
+
+</RelativeLayout>

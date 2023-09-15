@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".PersonalInfoForm"
+    android:layout_marginBottom="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/bgColor">
+
+    <TextView
+        android:id="@+id/tvMartialHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Martial Status"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+
+    <RadioGroup
+        android:id="@+id/radGroMartialStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMartialHeading"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radBtnSingle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:buttonTint="#FF1493"
+            android:textSize="20dp"
+            android:text="Single" />
+
+        <RadioButton
+            android:id="@+id/radBtnMarried"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:buttonTint="#FF1493"
+            android:layout_marginLeft="30dp"
+            android:textSize="20dp"
+            android:text="Married" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvDisability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category if Disability (if any)"
+        android:layout_below="@id/radGroMartialStatus"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autoTvDisability"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="10dp"
+            android:editable="false"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:imeOptions="actionDone"
+            android:clickable="true"
+            android:textSize="20dp"
+            android:textColor="@color/gray"
+            android:paddingStart="10dp"
+            android:drawableEnd="@drawable/ic_arrow_drop_down"
+            android:background="@drawable/textbox_styling"
+            android:hint="Please Select Your Disability"
+            android:textColorHint="@color/gray"/>
+
+        <TextView
+        android:id="@+id/tvProfessionInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Professional Information"
+        android:layout_below="@+id/spinnerDisability"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/tvEduTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Education"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_below="@id/tvProfessionInfo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"/>
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autoTvEducation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="20dp"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:imeOptions="actionDone"
+            android:clickable="true"
+            android:editable="false"
+            android:textColor="@color/gray"
+            android:paddingStart="10dp"
+            android:drawableEnd="@drawable/ic_arrow_drop_down"
+            android:background="@drawable/textbox_styling"
+            android:textColorHint="@color/gray"
+            android:hint="Please Select Your Education"/>
+
+    <TextView
+        android:id="@+id/tvOtherEdu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If any other (give description)"
+        android:layout_below="@id/autoTvEducation"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/etOtherEduDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/textbox_styling"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:inputType="textPersonName"
+        android:hint="Enter Your Education"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/gray"
+        android:layout_below="@id/tvOtherEdu"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvProfessionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profession"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/etOtherEduDesc"/>
+
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autoTvProfession"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="10dp"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:imeOptions="actionDone"
+            android:clickable="true"
+            android:textSize="20dp"
+            android:editable="false"
+            android:textColor="@color/gray"
+            android:paddingStart="10dp"
+            android:drawableEnd="@drawable/ic_arrow_drop_down"
+            android:background="@drawable/textbox_styling"
+            android:textColorHint="@color/gray"
+            android:hint="Please Select Your Profession"/>
+
+    <TextView
+        android:id="@+id/tvOtherProfession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If any other (give description)"
+        android:layout_below="@id/autoTvProfession"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/etOtherProfessionDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@drawable/textbox_styling"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/gray"
+        android:inputType="textPersonName"
+        android:hint="Enter Your Profession"
+        android:layout_below="@id/tvOtherProfession"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvSubProfessionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sub-Profession"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/etOtherProfessionDesc"/>
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autoTvSubProfession"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="20dp"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:imeOptions="actionDone"
+            android:clickable="true"
+            android:editable="false"
+            android:textColor="@color/gray"
+            android:paddingStart="10dp"
+            android:drawableEnd="@drawable/ic_arrow_drop_down"
+            android:background="@drawable/textbox_styling"
+            android:textColorHint="@color/gray"
+            android:hint="Please Select Your Sub-Profession"/>
+
+
+            <TextView
+                android:id="@+id/tvOtherSubProfession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If any other (give description)"
+                android:layout_below="@id/autoTvSubProfession"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/etOtherSubProfessionDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="@drawable/textbox_styling"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/gray"
+                android:hint="Enter Your Sub Profession"
+                android:layout_below="@id/tvOtherSubProfession"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvOccupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Occupation"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/etOtherSubProfessionDesc"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/autoTvOccupation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="20dp"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:imeOptions="actionDone"
+            android:clickable="true"
+            android:editable="false"
+            android:textColor="@color/gray"
+            android:paddingStart="10dp"
+            android:drawableEnd="@drawable/ic_arrow_drop_down"
+            android:background="@drawable/textbox_styling"
+            android:textColorHint="@color/gray"
+            android:hint="Please Select Your Occupation"/>
+
+            <TextView
+                android:id="@+id/tvOtherOccupation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If any other (give description)"
+                android:layout_below="@id/autoTvOccupation"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/etOtherOccupationDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="@drawable/textbox_styling"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:inputType="textPersonName"
+                android:hint="Enter Your Occupation"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/gray"
+                android:layout_below="@id/tvOtherSubProfession"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnForm3Back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textAllCaps="false"
+                android:background="@drawable/back_button_style"
+                android:text="Back"
+                android:textColor="@color/gray" />
+
+            <Button
+                android:id="@+id/btnForm3Next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="150dp"
+                android:background="@drawable/button_styling"
+                android:layout_toRightOf="@id/btnForm3Back" />
+
+        </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

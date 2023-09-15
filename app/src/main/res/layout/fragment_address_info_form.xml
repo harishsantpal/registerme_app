@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECE9FE"
+    tools:context=".AddressInfoForm">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/tvAddressInfoHeading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Permanent Address Info"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tvAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvAddressInfoHeading"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Address"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+
+                    <EditText
+                        android:id="@+id/etAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/tvAddress"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/textbox_styling"
+                        android:ems="10"
+                        android:textColorHint="@color/gray"
+                        android:hint="Enter your address"
+                        android:inputType="textPostalAddress"
+                        android:padding="10dp"
+                        android:textColor="@color/gray"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tvCountry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/etAddress"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Country"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoTvCountry"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:drawableEnd="@drawable/ic_arrow_drop_down"
+                        android:background="@drawable/textbox_styling"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="10dp"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+                        android:imeOptions="actionDone"
+                        android:textSize="18dp"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:textColor="@color/gray"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/tvCountry"
+                        android:textColorHint="@color/gray"
+                        android:hint="select your country"/>
+
+
+                         <TextView
+                             android:id="@+id/tvState"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_below="@id/etAddress"
+                             android:layout_marginLeft="130dp"
+                             android:layout_marginTop="15dp"
+                             android:layout_toRightOf="@id/tvCountry"
+                             android:text="State"
+                             android:textColor="@color/black"
+                             android:textSize="20dp" />
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/atuoTvState"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:drawableEnd="@drawable/ic_arrow_drop_down"
+                        android:background="@drawable/textbox_styling"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="10dp"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:imeOptions="actionDone"
+                        android:editable="false"
+                        android:textColor="@color/gray"
+                        android:textSize="18dp"
+                        android:layout_toRightOf="@id/autoTvCountry"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/tvCountry"
+                        android:textColorHint="@color/gray"
+                        android:hint="select your state"/>
+
+                         <TextView
+                             android:id="@+id/tvDistrict"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_below="@id/autoTvCountry"
+                             android:layout_marginLeft="10dp"
+                             android:layout_marginTop="15dp"
+                             android:text="District"
+                             android:textColor="@color/black"
+                             android:textSize="20dp" />
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoTvDistrict"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:drawableEnd="@drawable/ic_arrow_drop_down"
+                        android:background="@drawable/textbox_styling"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="10dp"
+                        android:editable="false"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:imeOptions="actionDone"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/gray"
+                        android:layout_below="@id/tvDistrict"
+                        android:textColorHint="@color/gray"
+                        android:hint="select your district"/>
+
+                         <TextView
+                             android:id="@+id/tvTaluka"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_below="@id/autoTvCountry"
+                             android:layout_marginLeft="130dp"
+                             android:layout_marginTop="15dp"
+                             android:layout_toRightOf="@id/tvDistrict"
+                             android:text="Taluka"
+                             android:textColor="@color/black"
+                             android:textSize="20dp" />
+
+
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoTvTaluka"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:drawableEnd="@drawable/ic_arrow_drop_down"
+                        android:background="@drawable/textbox_styling"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="10dp"
+                        android:editable="false"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:imeOptions="actionDone"
+                        android:textColor="@color/gray"
+                        android:textSize="18dp"
+                        android:layout_toRightOf="@id/autoTvCountry"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/tvTaluka"
+                        android:textColorHint="@color/gray"
+                        android:hint="select your taluka"/>
+
+                         <TextView
+                             android:id="@+id/tvVillageCity"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_below="@id/autoTvDistrict"
+                             android:layout_marginLeft="10dp"
+                             android:layout_marginTop="15dp"
+                             android:text="Village/City"
+                             android:textColor="@color/black"
+                             android:textSize="20dp" />
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoTvVillageCity"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:drawableEnd="@drawable/ic_arrow_drop_down"
+                        android:background="@drawable/textbox_styling"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="10dp"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+                        android:clickable="true"
+                        android:imeOptions="actionDone"
+                        android:editable="false"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/gray"
+                        android:layout_below="@id/tvVillageCity"
+                        android:textColorHint="@color/gray"
+                        android:hint="select your village/city"/>
+
+                         <TextView
+                             android:id="@+id/tvPinCode"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_below="@id/autoTvTaluka"
+                             android:layout_marginLeft="95dp"
+                             android:layout_marginTop="15dp"
+                             android:layout_toRightOf="@id/tvVillageCity"
+                             android:text="PIN Code*"
+                             android:textColor="@color/black"
+                             android:textSize="20dp" />
+
+                         <EditText
+                             android:id="@+id/etPinCode"
+                             android:layout_width="170dp"
+                             android:layout_height="50dp"
+                             android:layout_below="@id/tvPinCode"
+                             android:layout_marginLeft="30dp"
+                             android:layout_marginTop="10dp"
+                             android:layout_marginRight="10dp"
+                             android:layout_toRightOf="@id/autoTvVillageCity"
+                             android:background="@drawable/textbox_styling"
+                             android:ems="10"
+                             android:textSize="18dp"
+                             android:textColor="@color/gray"
+                             android:textColorHint="@color/gray"
+                             android:hint="Enter PIN Code"
+                             android:inputType="number"
+                             android:maxLength="6"
+                             android:padding="10dp" />
+
+
+
+
+                         <View
+                             android:id="@+id/viewLine"
+                             android:layout_width="370dp"
+                             android:layout_height="2dp"
+                             android:layout_marginLeft="10dp"
+                             android:layout_marginRight="10dp"
+                             android:layout_marginTop="40dp"
+                             android:layout_marginBottom="20dp"
+                             android:layout_below="@id/etPinCode"
+                             android:background="#E91E63" />
+
+                         <TextView
+                             android:id="@+id/tvCurrentAddressHeading"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Current Address Info"
+                             android:layout_marginTop="20dp"
+                             android:textSize="20dp"
+                             android:textColor="@color/black"
+                             android:layout_marginBottom="20dp"
+                             android:layout_marginLeft="10dp"
+                             android:layout_below="@id/viewLine"/>
+
+                         <Button
+                             android:id="@+id/btnForm2CopyAbove"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Copy above"
+                             android:textAllCaps="false"
+                             android:background="@drawable/button_styling"
+                             android:layout_below="@id/viewLine"
+                             android:layout_marginBottom="20dp"
+                             android:textSize="15dp"
+                             android:textColor="#ECE9FE"
+                             android:padding="15dp"
+                             android:layout_marginTop="10dp"
+                             android:layout_toRightOf="@id/tvCurrentAddressHeading"
+                             android:layout_marginLeft="45dp"/>
+
+
+                    <!--
+                     new current address info
+                     copy above
+                     -->
+
+                    <TextView
+                        android:id="@+id/tvAddress2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvCurrentAddressHeading"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Address"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+
+                    <EditText
+                        android:id="@+id/etAddress2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/tvAddress2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/textbox_styling"
+                        android:ems="10"
+                        android:textColorHint="@color/gray"
+                        android:hint="Enter your address"
+                        android:inputType="textPostalAddress"
+                        android:padding="10dp"
+                        android:textColor="@color/gray"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/tvCountry2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/etAddress2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Country"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoTvCountry2"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:drawableEnd="@drawable/ic_arrow_drop_down"
+                        android:background="@drawable/textbox_styling"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="10dp"
+                        android:textSize="18dp"
+                        android:editable="false"
+                        android:textColor="@color/gray"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/tvCountry2"
+                        android:textColorHint="@color/gray"
+                        android:hint="select your country"/>
+
+                    <TextView
+                        android:id="@+id/tvState2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/etAddress2"
+                        android:layout_marginLeft="130dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@id/tvCountry"
+                        android:text="State"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/atuoTvState2"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:drawableEnd="@drawable/ic_arrow_drop_down"
+                        android:background="@drawable/textbox_styling"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="10dp"
+                        android:editable="false"
+                        android:textColor="@color/gray"
+                        android:textSize="18dp"
+                        android:layout_toRightOf="@id/autoTvCountry2"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/tvCountry2"
+                        android:hint="select your state"
+                        android:textColorHint="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/tvDistrict2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/autoTvCountry2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="District"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoTvDistrict2"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:drawableEnd="@drawable/ic_arrow_drop_down"
+                        android:background="@drawable/textbox_styling"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="10dp"
+                        android:editable="false"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/gray"
+                        android:layout_below="@id/tvDistrict2"
+                        android:textColorHint="@color/gray"
+                        android:hint="select your district"/>
+
+                    <TextView
+                        android:id="@+id/tvTaluka2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/autoTvCountry2"
+                        android:layout_marginLeft="130dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@id/tvDistrict"
+                        android:text="Taluka"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoTvTaluka2"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:drawableEnd="@drawable/ic_arrow_drop_down"
+                        android:background="@drawable/textbox_styling"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="10dp"
+                        android:editable="false"
+                        android:textColor="@color/gray"
+                        android:textSize="18dp"
+                        android:layout_toRightOf="@id/autoTvCountry"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/tvTaluka2"
+                        android:textColorHint="@color/gray"
+                        android:hint="select your taluka"/>
+
+
+                    <TextView
+                        android:id="@+id/tvVillageCity2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/autoTvDistrict2"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Village/City"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+
+
+
+              <!--      <AutoCompleteTextView
+                        android:id="@+id/atvVillage"
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvVillageCity"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/textbox_styling"
+                        android:drawableEnd="@drawable/ic_arrow_drop_down"
+                        android:text="select your Village/City"/>
+                        -->
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoTvVillage2"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:paddingEnd="20dp"
+                        android:paddingStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/gray"
+                        android:textSize="18dp"
+                        android:editable="false"
+                        android:textColorHint="@color/gray"
+                        android:hint="select your village"
+                        android:layout_below="@id/tvVillageCity2"
+                        android:drawableEnd="@drawable/ic_arrow_drop_down"
+                        android:background="@drawable/textbox_styling"/>
+
+                    <TextView
+                        android:id="@+id/tvPinCode2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/autoTvTaluka2"
+                        android:layout_marginLeft="95dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@id/tvVillageCity"
+                        android:text="PIN Code*"
+                        android:textColor="@color/black"
+                        android:textSize="20dp" />
+
+                    <EditText
+                        android:id="@+id/etPinCode2"
+                        android:layout_width="170dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@id/tvPinCode2"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@id/autoTvVillage2"
+                        android:background="@drawable/textbox_styling"
+                        android:ems="10"
+                        android:textSize="18dp"
+                        android:textColorHint="@color/gray"
+                        android:hint="Enter PIN Code"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:textColor="@color/gray"
+                        android:padding="10dp" />
+
+                    <Button
+                        android:id="@+id/btnForm2Back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:textColor="@color/gray"
+                        android:background="@drawable/back_button_style"
+                        android:textAllCaps="false"
+                        android:layout_below="@id/autoTvVillage2"/>
+
+                    <Button
+                        android:id="@+id/btnForm2Next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Next"
+                        android:layout_marginLeft="150dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/button_styling"
+                        android:textAllCaps="false"
+                        android:layout_toRightOf="@id/btnForm2Back"
+                        android:layout_below="@id/autoTvVillage2"/>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>
